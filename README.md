@@ -1,2 +1,0 @@
-# Irrigation_Drip_System_Installer
-Irrigation_Drip_System_Installer

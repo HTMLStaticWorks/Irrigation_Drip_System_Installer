@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Soil Mounds (Bottom ground - perfectly touching at 35 and 65) -->
+  <!-- Left Mound (Peak at x=20) -->
+  <path d="M5 88c7.5-9 22.5-9 30 0" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Center Mound (Peak at x=50) -->
+  <path d="M35 88c7.5-9 22.5-9 30 0" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Right Mound (Peak at x=80) -->
+  <path d="M65 88c7.5-9 22.5-9 30 0" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Horizontal ground accent lines at the far edges -->
+  <path d="M1 88h6" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M93 88h6" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Sprinkler Riser (Stem - centered at x=50) -->
+  <path d="M50 30v58" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Sprinkler Head Components (centered at x=50) -->
+  <!-- Connector ring -->
+  <rect x="45" y="22" width="10" height="8" rx="1" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5" />
+  <!-- Upper body -->
+  <path d="M46.5 16h7v6h-7z" fill="#94a3b8" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round" />
+  <!-- Top Cap -->
+  <rect x="42" y="11" width="16" height="5" rx="1.5" fill="#475569" stroke="#0f172a" stroke-width="2.5" />
+
+  <!-- Water Spray Rays (Symmetrical, Left/Right) -->
+  <!-- Left Spray Rays (starting from x=45) -->
+  <path d="M45 15L10 9" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M43 18H8" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M44 21L11 27" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M46 24L16 34" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Right Spray Rays (starting from x=55) -->
+  <path d="M55 15L90 9" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M57 18H92" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M56 21L89 27" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+  <path d="M54 24L84 34" fill="none" stroke="#2563eb" stroke-dasharray="4 4" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Dripping Droplets (perfectly aligned with plant stems) -->
+  <!-- Droplet landing on left sprout (x=20) -->
+  <path d="M20 44c-1.5 2-2.5 3.5-2.5 5a2.5 2.5 0 0 0 5 0c0-1.5-1-3-2.5-5z" fill="#3b82f6" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Droplet landing on right sprout (x=80) -->
+  <path d="M80 44c-1.5 2-2.5 3.5-2.5 5a2.5 2.5 0 0 0 5 0c0-1.5-1-3-2.5-5z" fill="#3b82f6" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Droplet landing on middle sprout (x=41) -->
+  <path d="M41 53c-1.5 2-2.5 3.5-2.5 5a2.5 2.5 0 0 0 5 0c0-1.5-1-3-2.5-5z" fill="#3b82f6" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Sprouts (Crops / Plants / Grass) -->
+  <!-- Left Sprout (centered at x=20) -->
+  <path d="M20 54v34" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Leaves -->
+  <path d="M20 75c-6-3-9 2-9 6s6 5 9 1z" fill="#22c55e" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+  <path d="M20 67c6-3 9 2 9 6s-6 5-9 1z" fill="#4ade80" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+  <path d="M20 57c-5-3-7.5 1.5-7.5 5s5 4 7.5 1z" fill="#22c55e" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Middle Sprout (centered at x=41) -->
+  <path d="M41 65v23" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Leaves -->
+  <path d="M41 78c-6-3-9 2-9 6s6 5 9 1z" fill="#22c55e" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+  <path d="M41 70c6-3 9 2 9 6s-6 5-9 1z" fill="#4ade80" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Right Sprout (centered at x=80) -->
+  <path d="M80 56v32" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" />
+  <!-- Leaves -->
+  <path d="M80 76c-6-3-9 2-9 6s6 5 9 1z" fill="#22c55e" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+  <path d="M80 68c6-3 9 2 9 6s-6 5-9 1z" fill="#4ade80" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+  <path d="M80 58c-5-3-7.5 1.5-7.5 5s5 4 7.5 1z" fill="#22c55e" stroke="#0f172a" stroke-width="1.8" stroke-linejoin="round" />
+</svg>

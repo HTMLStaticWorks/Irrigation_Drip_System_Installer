@@ -1,0 +1,81 @@
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    color-scheme: dark;
+
+    --surface-0: #0b1220;
+    --surface-1: #070d18;
+    --surface-2: #101a2b;
+    --text-1: #e5e7eb;
+    --text-2: #b7c0cd;
+    --border-1: rgba(229, 231, 235, 0.14);
+    --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.35);
+
+    --color-primary: #2dd4bf;
+    --color-secondary: #4ade80;
+
+    --bs-body-bg: var(--surface-1);
+    --bs-body-color: var(--text-1);
+    --bs-border-color: var(--border-1);
+  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --surface-0: #0b1220;
+  --surface-1: #070d18;
+  --surface-2: #101a2b;
+  --text-1: #e5e7eb;
+  --text-2: #b7c0cd;
+  --border-1: rgba(229, 231, 235, 0.14);
+  --shadow-soft: 0 16px 36px rgba(0, 0, 0, 0.35);
+
+  --color-primary: #2dd4bf;
+  --color-secondary: #4ade80;
+
+  --bs-body-bg: var(--surface-1);
+  --bs-body-color: var(--text-1);
+  --bs-border-color: var(--border-1);
+}
+
+html[data-theme="dark"] .card {
+  background: var(--surface-0);
+}
+
+html[data-theme="dark"] .brand-mark {
+  background-image: url('../images/logo2_dark.svg');
+}
+
+html[data-theme="dark"] .btn-primary:hover {
+  box-shadow: 0 8px 20px rgba(45, 212, 191, 0.4);
+}
+
+html[data-theme="dark"] .btn-outline-secondary:hover {
+  box-shadow: 0 8px 20px rgba(74, 222, 128, 0.25);
+}
+
+html[data-theme="dark"] .social-link:hover {
+  box-shadow: 0 10px 20px rgba(45, 212, 191, 0.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .card {
+    background: var(--surface-0);
+  }
+
+  html:not([data-theme]) .brand-mark {
+    background-image: url('../images/logo2_dark.svg');
+  }
+
+  html:not([data-theme]) .btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(45, 212, 191, 0.4);
+  }
+
+  html:not([data-theme]) .btn-outline-secondary:hover {
+    box-shadow: 0 8px 20px rgba(74, 222, 128, 0.25);
+  }
+
+  html:not([data-theme]) .social-link:hover {
+    box-shadow: 0 10px 20px rgba(45, 212, 191, 0.45);
+  }
+}
