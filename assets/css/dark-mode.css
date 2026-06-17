@@ -21,6 +21,57 @@
     --hero-overlay-end: color-mix(in srgb, var(--surface-0) 60%, transparent);
     --hero-opacity: 0.85;
   }
+
+  html:not([data-theme]) .form-control {
+    background-color: var(--surface-0);
+    border-color: var(--border-1);
+    color: var(--text-1);
+  }
+
+  html:not([data-theme]) .form-select {
+    background-color: var(--surface-0);
+    border-color: var(--border-1);
+    color: var(--text-1);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e5e7eb' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+  }
+
+  html:not([data-theme]) .form-control:focus,
+  html:not([data-theme]) .form-select:focus {
+    background-color: var(--surface-2);
+    border-color: var(--color-primary);
+    color: var(--text-1);
+    box-shadow: 0 0 0 0.25rem rgba(45, 212, 191, 0.25);
+  }
+
+  html:not([data-theme]) .form-control::placeholder,
+  html:not([data-theme]) textarea::placeholder,
+  html:not([data-theme]) input::placeholder {
+    color: var(--text-2) !important;
+    opacity: 0.75 !important;
+  }
+
+  html:not([data-theme]) .accordion-item {
+    background-color: var(--surface-0);
+    border-color: var(--border-1);
+  }
+
+  html:not([data-theme]) .accordion-button {
+    background-color: var(--surface-0);
+    color: var(--text-1);
+  }
+
+  html:not([data-theme]) .accordion-button:not(.collapsed) {
+    background-color: var(--surface-2);
+    color: var(--color-primary);
+  }
+
+  html:not([data-theme]) .accordion-button::after {
+    filter: invert(1) brightness(2);
+  }
+
+  html:not([data-theme]) .text-muted {
+    color: var(--text-2) !important;
+  }
 }
 
 html[data-theme="dark"] {
@@ -44,6 +95,59 @@ html[data-theme="dark"] {
   --hero-overlay-start: color-mix(in srgb, var(--surface-0) 35%, transparent);
   --hero-overlay-end: color-mix(in srgb, var(--surface-0) 60%, transparent);
   --hero-opacity: 0.85;
+}
+
+/* Form Controls & Placeholders */
+html[data-theme="dark"] .form-control {
+  background-color: var(--surface-0);
+  border-color: var(--border-1);
+  color: var(--text-1);
+}
+
+html[data-theme="dark"] .form-select {
+  background-color: var(--surface-0);
+  border-color: var(--border-1);
+  color: var(--text-1);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e5e7eb' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+}
+
+html[data-theme="dark"] .form-control:focus,
+html[data-theme="dark"] .form-select:focus {
+  background-color: var(--surface-2);
+  border-color: var(--color-primary);
+  color: var(--text-1);
+  box-shadow: 0 0 0 0.25rem rgba(45, 212, 191, 0.25);
+}
+
+html[data-theme="dark"] .form-control::placeholder,
+html[data-theme="dark"] textarea::placeholder,
+html[data-theme="dark"] input::placeholder {
+  color: var(--text-2) !important;
+  opacity: 0.75 !important;
+}
+
+/* Accordion */
+html[data-theme="dark"] .accordion-item {
+  background-color: var(--surface-0);
+  border-color: var(--border-1);
+}
+
+html[data-theme="dark"] .accordion-button {
+  background-color: var(--surface-0);
+  color: var(--text-1);
+}
+
+html[data-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: var(--surface-2);
+  color: var(--color-primary);
+}
+
+html[data-theme="dark"] .accordion-button::after {
+  filter: invert(1) brightness(2);
+}
+
+html[data-theme="dark"] .text-muted {
+  color: var(--text-2) !important;
 }
 
 html[data-theme="dark"] .card {
@@ -70,6 +174,11 @@ html[data-theme="dark"] .pricing-features-list li::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%232dd4bf'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
 }
 
+html[data-theme="dark"] .navbar-toggler-icon,
+html[data-theme="dark"] .btn-close {
+  filter: invert(1) brightness(2);
+}
+
 @media (prefers-color-scheme: dark) {
   html:not([data-theme]) .card {
     background: var(--surface-0);
@@ -93,5 +202,10 @@ html[data-theme="dark"] .pricing-features-list li::before {
 
   html:not([data-theme]) .pricing-features-list li::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%232dd4bf'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  }
+
+  html:not([data-theme]) .navbar-toggler-icon,
+  html:not([data-theme]) .btn-close {
+    filter: invert(1) brightness(2);
   }
 }

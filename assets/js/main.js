@@ -170,19 +170,6 @@ function initBackToTop() {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-
-  const footer = document.querySelector("footer.footer");
-  if (footer && "IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        if (!entry) return;
-        button.style.bottom = entry.isIntersecting ? `${Math.max(16, entry.intersectionRect.height + 16)}px` : "1rem";
-      },
-      { root: null, threshold: 0.02 }
-    );
-    observer.observe(footer);
-  }
 }
 
 function initFormValidation() {
@@ -286,7 +273,14 @@ function initPasswordToggles() {
   const setState = (button, isVisible) => {
     button.setAttribute("aria-pressed", String(isVisible));
     button.setAttribute("data-password-state", isVisible ? "visible" : "hidden");
-    button.textContent = isVisible ? "Hide" : "Show";
+    const showIcon = button.querySelector(".password-icon-show");
+    const hideIcon = button.querySelector(".password-icon-hide");
+    if (showIcon && hideIcon) {
+      showIcon.style.display = isVisible ? "none" : "inline-block";
+      hideIcon.style.display = isVisible ? "inline-block" : "none";
+    } else {
+      button.textContent = isVisible ? "Hide" : "Show";
+    }
   };
 
   buttons.forEach((button) => {
